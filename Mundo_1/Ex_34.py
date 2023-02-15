@@ -3,6 +3,10 @@ de um funcionario e calcule o valor do seu aumento.
 Para salarios superiores a R$1250,00. Calcule um aumento de 10%.
 Para os inferiores ou iguais. o aumento sera de 15%.
 '''
+from Mundo_1 import Ex_35
+
+Ex_35.analise_triangulo()
+
 salario = float(input('Qual é o salario do funcionario do Itau? R$'))
 if salario <= 1250:
     novo = salario + (salario * 15 / 100)
