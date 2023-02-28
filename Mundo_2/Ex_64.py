@@ -2,9 +2,10 @@
 o programa só vai parar quando o usuario digitar o valor 999, que é a condição de parada 
 no final mostre quantos numeros foram digitados e qual foi a soma entre eles 
 (desconsiderando o flog)'''
-num = 0
-cont = 0
+num = cont = soma = 0
+num = int(input('Digite um numero: [ou 999 - para parar o programa]'))
 while num != 999:
-    num = int(input('Digite um numero: [ou 999 - para parar o programa]'))
+    soma += num
     cont += 1
-print('Acabou')
+    num = int(input('Digite um numero: [ou 999 - para parar o programa]'))
+print('Voce digitou {} numeros e a soma entre eles foi {}'.format(cont, soma))
