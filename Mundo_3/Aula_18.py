@@ -1,6 +1,7 @@
 dados = list()
 dados.append('Yara')
 dados.append(21)
+print(dados[0])
 pessoas = list()
 pessoas.append(dados[:])
 print(dados[3])
